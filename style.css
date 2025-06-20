@@ -19,8 +19,8 @@ body {
 
 .logo {
   width: 150px;  /* increase size */
-  height: auto;
-  background: none; /* ensure no black background */
+  height: 100px;
+  background: transparent; /* ensure no black background */
   border: none;
   box-shadow: none;
 }
