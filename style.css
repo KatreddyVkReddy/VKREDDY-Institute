@@ -30,11 +30,11 @@ body {
 }
 
 .begin-button {
-  padding: 10px 30px;
+  padding: 30px 30px;
   font-size: 18px;
   background-color: #007BFF;
   border: none;
-  color: white;
+  color: rgb(24, 21, 169);
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s;
