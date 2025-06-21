@@ -1,3 +1,6 @@
+.first-page {
+  color: red;
+}
 body {
   margin: 0;
   padding: 0;
@@ -6,7 +9,7 @@ body {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  color: white;
+  color: rgb(136, 27, 155);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,27 +17,36 @@ body {
 
 .logo-bar {
   padding: 10px;
-  background: transparent; /* remove black background */
+  background: transparent;
 }
 
 .logo {
-  width: 150px;  /* increase size */
-  height: 100px;
-  background: transparent; /* ensure no black background */
+  width: 250px;
+  height: auto;
+  background: transparent;
   border: none;
   box-shadow: none;
 }
 
 .content {
-  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(50vh - 100px); /* subtract space for logo */
+}
+
+.content h1 {
+  font-size: 36px;
+  margin-bottom: 50px;
 }
 
 .begin-button {
-  padding: 10px 30px;
-  font-size: 18px;
+  padding: 12px 36px;
+  font-size: 20px;
   background-color: #007BFF;
   border: none;
-  color: rgb(24, 21, 169);
+  color: white;
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -42,4 +54,147 @@ body {
 
 .begin-button:hover {
   background-color: #0056b3;
+}
+
+.access-container {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.access-container form input {
+  padding: 10px;
+  margin: 8px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.access-container form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.access-container form button:hover {
+  background-color: #005fa3;
+}
+
+.dashboard-container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.button-grid button {
+  padding: 15px;
+  font-size: 16px;
+  background-color: #008cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button-grid button:hover {
+  background-color: #006bb3;
+}
+
+.form-container {
+  margin: 100px auto;
+  width: 90%;
+  max-width: 500px;
+  background-color: rgba(255,255,255,0.95);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px gray;
+  text-align: center;
+}
+
+.form-container input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  display: block;
+}
+
+.form-container button {
+  padding: 10px 25px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #005fa3;
+}
+
+.students-container {
+  padding: 40px;
+  text-align: center;
+  background-color: rgba(227, 211, 211, 0.95);
+  margin: 50px auto;
+  width: 95%;
+  max-width: 1200px;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #0077cc;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.students-container form {
+  margin-bottom: 20px;
+}
+
+.students-container form input[type="text"] {
+  padding: 8px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.students-container form button {
+  padding: 8px 15px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.students-container form button:hover {
+  background-color: #005fa3;
 }
